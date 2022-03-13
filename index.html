@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="​​https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
@@ -9,6 +8,7 @@
     <!-- IMPORTED COMPONENTS -->    
     <script src="./js/Rotation.js"></script>
     <script src="./js/coins.js"></script>
+    <script src="./js/fish.js"></script>
     
   </head>
   <body>
@@ -21,10 +21,12 @@
           id="treasure"
           src="assets/treasure/model.gltf"
         ></a-asset-item>
+
         <a-asset-item
-          id="xyz"
-          src="assets/coral_fish/scene.gltf"
+          id="fish"
+          src="assets/fish/textures/lambert1_normal.png"
         ></a-asset-item>
+
         <a-asset-item id="turtle" src="assets/turtle/scene.gltf"></a-asset-item>        
         <a-asset-item
           id="scuba_driver"
@@ -56,6 +58,7 @@
           scale="15 15 15"
           position="0 -30 -40"
           rotation="0 90 0"
+          coins
         ></a-entity>
 
         <a-entity
@@ -63,6 +66,7 @@
           scale="15 15 15"
           position="10 -30 -40"
           rotation="0 90 0"
+          coins
         ></a-entity>
 
         <a-entity
@@ -70,7 +74,45 @@
           scale="15 15 15"
           position="-15 -30 -40"
           rotation="0 90 0"
+          coins
         ></a-entity>
+
+        <!--FISH-->
+        <a-entity
+        gltf-model="#fish"
+        scale="9 9 9"
+        position="0 -50 -60"
+        fishes
+      ></a-entity>
+
+       <a-entity
+       gltf-model="#fish"
+       scale=" 9 9 9"
+       position="0 -9 -25"
+       fishes
+     ></a-entity>
+      
+      <a-entity
+      gltf-model="#fish"
+      scale=" 10 10 10"
+      position="3 10 -30"
+      fishes
+    ></a-entity>
+      
+      <a-entity
+      gltf-model="#fish"
+      scale=" 8 8 8"
+      position="7 -10 -20"
+      fishes
+    ></a-entity>
+
+      <a-entity
+      gltf-model="#fish"
+      scale=" 7 7 7"
+      position="0 10 -30"
+      fishes
+    ></a-entity>
+    <!--FISH END-->
        
         <!--Turtule-->
         <a-entity
